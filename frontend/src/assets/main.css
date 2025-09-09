@@ -1,0 +1,137 @@
+/* 全局样式 */
+:root {
+  --primary-color: #1989fa;
+  --success-color: #07c160;
+  --warning-color: #ff976a;
+  --danger-color: #ee0a24;
+  --text-color: #323233;
+  --text-color-secondary: #646566;
+  --text-color-light: #969799;
+  --background-color: #f7f8fa;
+  --border-color: #ebedf0;
+}
+
+/* 基础样式 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 页面容器 */
+.page-container {
+  padding: 16px;
+  padding-top: 62px;
+  padding-bottom: 60px;
+}
+
+/* 卡片样式 */
+.card-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(100, 101, 102, 0.08);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+/* 标题样式 */
+.section-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-color);
+  padding: 0 16px;
+}
+
+/* 文本颜色 */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-success {
+  color: var(--success-color);
+}
+
+.text-warning {
+  color: var(--warning-color);
+}
+
+.text-danger {
+  color: var(--danger-color);
+}
+
+/* 按钮间距 */
+.van-button + .van-button {
+  margin-left: 8px;
+}
+
+/* 表单样式 */
+.van-form {
+  width: 100%;
+}
+
+/* 标签页样式 */
+.van-tabs {
+  width: 100%;
+}
+
+/* 列表样式 */
+.list-item {
+  padding: 12px 16px;
+  background-color: #fff;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+/* 弹性布局 */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* 间距 */
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+/* 响应式调整 */
+@media (min-width: 768px) {
+  .page-container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+} 
